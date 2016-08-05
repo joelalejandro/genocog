@@ -2,6 +2,7 @@
 /* global require, module */
 var EmberApp = require('ember-cli/lib/broccoli/ember-app');
 var nodeSass = require('node-sass'); // loads the version in your package.json
+var autoprefixer = require('autoprefixer');
 
 module.exports = function(defaults) {
   var app = new EmberApp(defaults, {
@@ -11,6 +12,22 @@ module.exports = function(defaults) {
         'bower_components/materialize/sass'
       ],
       nodeSass: nodeSass // Workaround for ember-cli-sass bug https://github.com/aexmachina/ember-cli-sass/issues/117
+    },
+    postcssOptions: {
+      compile: {
+        enabled: false
+      },
+      filter: {
+        enabled: true,
+        plugins: [
+          {
+            module: autoprefixer,
+            options: {
+              browsers: ['last 2 versions', '> 5%']
+            }
+          }
+        ]
+      }
     }
   });
 

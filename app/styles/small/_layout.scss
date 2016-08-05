@@ -1,0 +1,11 @@
+/* ==========================================================================
+   Layout (mobile-first)
+   ========================================================================== */
+
+body {
+  background: $page-bg-color;       // Used when no gradients available
+  background: $page-gradient-bg;
+  margin: 0;
+  padding: 0;
+}
+

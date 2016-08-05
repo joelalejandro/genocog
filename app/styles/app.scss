@@ -1,5 +1,12 @@
 // Fix for Roboto font path
 $roboto-font-path: '../assets/';
 
-// Materialize styles
-@import "materialize";
+// Materialize shared components
+@import 'components/color';
+@import 'components/roboto';
+
+@import 'small/_small.scss';
+
+@media (min-width: 768px) {
+  @import 'large/_large.scss';
+}
