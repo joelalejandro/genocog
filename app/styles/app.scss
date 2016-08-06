@@ -4,9 +4,12 @@ $roboto-font-path: '../assets/';
 // Materialize shared components
 @import 'components/color';
 @import 'components/roboto';
+@import 'components/normalize';
 
-@import 'small/_small.scss';
+@import 'variables';
+
+@import 'small/main';
 
 @media (min-width: 768px) {
-  @import 'large/_large.scss';
+  @import 'large/main';
 }

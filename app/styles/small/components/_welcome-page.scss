@@ -1,0 +1,33 @@
+/* ==========================================================================
+   Welcome page (small)
+   ========================================================================== */
+
+.welcome-page {
+
+  @include full-screen(80%);
+
+  .welcome-page__header {
+    margin: 0 auto;
+  }
+
+  .welcome-page__content {
+    text-align: center;
+
+    .welcome-page__introductory-text {
+      font-size: $welcome-page__font-size;
+    }
+
+    .welcome-page__cta {
+      font-weight: bold;
+    }
+  }
+
+  .welcome-page__footer {
+    margin: 0 auto;
+  }
+
+  // Tweak logo component in context.
+  .logo {
+    max-width: 80%;
+  }
+}
