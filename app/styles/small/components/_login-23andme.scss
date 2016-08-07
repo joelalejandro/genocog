@@ -1,0 +1,13 @@
+/* ==========================================================================
+   "Connect with 23andme" button (small)
+   ========================================================================== */
+
+.login-23andme {
+  margin-top: 80px;
+
+  iframe {
+    display: block;
+    margin: 0 auto;
+    width: 280px !important;  // Only way to override externally-generated IFRAME settings :(
+  }
+}

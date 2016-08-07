@@ -19,4 +19,8 @@ body {
 
 .component {
   display: block;
+
+  &.component--centered {
+    margin: 0 auto;
+  }
 }

@@ -1,0 +1,6 @@
+{{#unless isRedirecting}}
+  {{yield}}
+{{else}}
+  {{#md-loader mode="indeterminate" color="blue"}}
+  {{/md-loader}}
+{{/unless}}

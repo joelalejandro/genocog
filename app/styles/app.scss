@@ -1,12 +1,13 @@
 // Fix for Roboto font path
 $roboto-font-path: '../assets/';
 
+@import 'variables';
+
 // Materialize shared components
 @import 'components/color';
 @import 'components/roboto';
 @import 'components/normalize';
-
-@import 'variables';
+@import 'components/preloader';
 
 @import 'small/main';
 
