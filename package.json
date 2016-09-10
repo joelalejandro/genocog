@@ -18,6 +18,10 @@
   },
   "author": "",
   "license": "MIT",
+  "dependencies": {
+    "genocog-canvas": "*",
+    "escadaria": "*"
+  },
   "devDependencies": {
     "autoprefixer": "^6.4.0",
     "broccoli-asset-rev": "^2.4.2",
