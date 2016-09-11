@@ -1,12 +1,15 @@
 import Ember from 'ember';
-import Stimulus from 'genocog-canvas';
+import VisualStimulusGenerator from 'genocog/utils/visual-stimulus-generator';
 
 export default Ember.Component.extend({
+  contrast: null,
+  withGabor: null,
+
   tagName: 'div',
   classNames: ['visual-stimulus'],
   didInsertElement() {
-    let stimulus = new Stimulus();
-    let canvas = stimulus.generateImage(0.5);
-    this.$.append(canvas);
+    let stimulus = new VisualStimulusGenerator();
+    let canvas = stimulus.generateImage(this.get('contrast'));
+    Ember.$(this.element).append(canvas);
   }
 });
