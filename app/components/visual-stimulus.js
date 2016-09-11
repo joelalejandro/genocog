@@ -9,7 +9,9 @@ export default Ember.Component.extend({
   classNames: ['visual-stimulus'],
   didInsertElement() {
     let stimulus = new VisualStimulusGenerator();
-    let canvas = stimulus.generateImage(this.get('contrast'));
-    Ember.$(this.element).append(canvas);
+    let canvas1 = stimulus.generateImage(this.get('contrast')),
+        canvas2 = stimulus.generateImage(this.get('contrast'), true);
+    Ember.$(this.element).append(canvas1);
+    Ember.$(this.element).append(canvas2);
   }
 });
