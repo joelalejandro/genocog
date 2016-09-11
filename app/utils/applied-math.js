@@ -21,3 +21,13 @@ export function gauss2d(Xm, Ym, s) {
 
   return Math.exp(-((Xm2 + Ym2) / (2 * s2)));
 }
+
+export function restrictNumber(num, upper, lower) {
+  if (num <= lower) {
+    num = lower;
+  }
+  if (num > upper) {
+    num = upper;
+  }
+  return num;
+}
