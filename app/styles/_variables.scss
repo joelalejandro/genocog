@@ -1,2 +1,29 @@
-$page-bg-color: color('blue', 'darken-2');
-$page-gradient-bg: linear-gradient(to bottom, $page-bg-color 0%, #fff 100%);
+/**
+ * Paths
+ */
+$path-images: 'images/';
+
+/**
+ * Materialize settings
+ */
+$spinner-default-color: 'blue';
+
+/**
+ * Layout
+ */
+$page-bg-color: #fff;
+$page-bg-color-bottom: color('blue', 'lighten-2');
+$page-gradient-bg: linear-gradient(to bottom, $page-bg-color 80%, $page-bg-color-bottom 100%);
+$page-font: 'Roboto';
+
+/**
+ * Component: Logo
+ */
+$logo-url: '#{$path-images}/logo-mockup.png';
+$logo-width: 130px;
+$logo-height: 164px;
+
+/**
+ * Component: Welcome page
+ */
+$welcome-page__font-size: 16px;

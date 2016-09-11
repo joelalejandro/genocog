@@ -1,0 +1,10 @@
+/* ==========================================================================
+   Logo (small)
+   ========================================================================== */
+
+.logo {
+  margin: 0 auto;
+  background: url($logo-url) center center no-repeat;
+  width: $logo-width;
+  height: $logo-height;
+}

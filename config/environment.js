@@ -1,7 +1,7 @@
 /* jshint node: true */
 
 module.exports = function(environment) {
-  var ENV = {
+  let ENV = {
     modulePrefix: 'genocog',
     environment: environment,
     rootURL: '/',
@@ -16,6 +16,9 @@ module.exports = function(environment) {
     APP: {
       // Here you can pass flags/options to your application instance
       // when it is created
+      login23andme: {
+        clientId: 'a1cef57b329c8ce8a942608e7c24aefa'
+      }
     }
   };
 
